@@ -1,0 +1,5 @@
+{
+  "name": "Self Drive Car - Car Rental Platform",
+  "description": "A comprehensive car rental web application that enables users to seamlessly register, list, and rent vehicles through a modern, user-friendly platform. This application simulates a full-stack experience using a mock Supabase backend.",
+  "requestFramePermissions": []
+}
