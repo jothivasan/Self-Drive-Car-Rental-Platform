@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Self-Drive Car Rental Platform
 
-# Run and deploy your AI Studio app
+A responsive React application that demonstrates a self-drive vehicle rental experience. Users can browse vehicles, filter and sort listings, view vehicle details, authenticate, and manage a rental-oriented profile.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1v3B20Y4eH7vA-XuxnzgQPfS4Oey_gJBY
+- Vehicle catalog with filtering and sorting
+- Vehicle detail modal and rental flow UI
+- Registration, login, and profile screens
+- Dashboard for account and booking-oriented views
+- Responsive components built for a modern web experience
 
-## Run Locally
+## Built with
 
-**Prerequisites:**  Node.js
+React 19, TypeScript, Vite, and Supabase client libraries.
 
+## Run locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+cp .env.example .env.local
+npm run dev
+```
+
+Configure the Supabase URL and anonymous key expected by `services/supabaseClient.ts`. Use environment variables for credentials and do not commit local environment files.
+
+For a production build, run `npm run build`; use `npm run preview` to inspect the generated build.
+
+## Project structure
+
+- `components/` – reusable rental, navigation, authentication, and profile UI
+- `context/` and `hooks/` – authentication state and helpers
+- `services/` – Supabase integration
+- `Documentation/` – project documentation
+
+## License
+
+Released under the MIT License. See [LICENSE](LICENSE).
